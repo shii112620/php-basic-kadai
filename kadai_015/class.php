@@ -13,11 +13,8 @@
             private $name;
             private $price;
 
-            public function set_price(string $price) {
-                $this->name = $price;
-            }
             public function show_price() {
-                echo $this->name . '<br>';
+                echo $this->price . '<br>';
             }
 
             public function __construct(string $name, int $price) {
@@ -31,11 +28,8 @@
             private $height;
             private $weight;
 
-            public function set_height(string $height) {
-                $this->name = $height;
-            }
             public function show_height() {
-                echo $this->name . '<br>';
+                echo $this->height . '<br>';
             }
 
             public function __construct(string $name, int $height, int $weight) {
@@ -57,10 +51,8 @@
 
         echo '<br>';
 
-        $food->set_price(250);
         $food->show_price();
 
-        $animal->set_height(60);
         $animal->show_height();
         ?>
     </p>
